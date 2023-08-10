@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>wedding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<style>
+.mySlides {
+    display:none;
+    width: 100%;
+    max-width: 1500px;
+    height: 700px;
+    opacity: 0.5;
+}
+
+.container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+     video{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    } 
+   
+    /* .timer-container{
+     width: 100%;
+     height: 30%;
+    }  */
+
+    p {
+  text-align: center;
+  font-size: 60px;
+  color: yellow;
+  /* margin-top: 0px; */
+}
+
+
+/* img{
+    width: 1500px;
+    height: 700px;
+    object-fit: cover;
+    }  */
+    .text-overlay{
+   position: absolute; 
+   /* text-align: center;  */
+   left: 12.5cm;
+   right:12.5cm;
+  /* right: 40%;
+  left: 50%; */
+  /* font-size: 30px;   */
+  top: 500px;
+  /* bottom: 40px; */
+  
+}
+
+.text-overlay2
+{
+    position: absolute;
+    top: 85cqmax; /* Adjust the positioning to place text at the top */
+    left: 53%;
+    transform: translateX(-50%);
+    background-color: none; /* Adjust the background color and opacity */
+    padding: 10px;
+    /*border-radius: 5px;*/
+    max-width: 80%;
+}
+
+.btn{
+    position:absolute;
+    top: 113cqmax;
+    left: 50%;
+    right: 50%;
+    /* cursor: pointer;
+     transform:translate(-50%, -50%); */
+   /* background-color: rgb(245, 223, 24)
+   /* color rgb(238, 241, 27); */
+    /* font-size: 16px; */
+    /* padding : 10px 20px; */
+    /* border: none;
+    cursor:pointer;
+    text-align : center; */
+    width: 400px;
+    height: 100px;
+    border-radius:5px;
+}
+
+button{
+background-color: rgb(245, 223, 24); 
+padding : 12px 24px; 
+border: none;
+border-radius: 17px;
+}
+
+.text-overlay{
+   position: absolute; 
+   font-size: xx-large;
+   /* text-align: center;  */
+   /* left: 12cm;
+   right:12cm; */
+/* right: 40%;
+  left: 50%; */
+  /* font-size: 30px; */  
+  bottom: 40px; 
+}
+
+.text2
+{
+    position:absolute;
+    top: 126cqmax;
+    left: 38%;
+    right: 38%;
+    font-size:xx-large; 
+} 
+
+.container1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .picture1{
+/* top:135cqmax; */
+top: 3.8cm;
+position:absolute;
+width: 50%;
+/* height: 50%;  */
+ right: 0%;
+ width: 620px;
+  height: 400px;
+}
+/* img{
+    width: 620px;
+    height: 400px;
+    object-fit: cover;
+    }  */
+
+.nayratext
+{
+    position:absolute;
+    top: 20cqmax;
+    left: 20%;
+    right: 80%;
+    font-size: 16px;
+}
+
+.abhitext{
+    position:absolute;
+    top: 59cqmax;
+    right: 35%;
+    left: 65%;
+    font-size: 16px;
+}
+.picture2{
+    position:relative;
+    top: 16cm;
+    left: 0%;
+    margin-left: 0.5cm;
+    width: 48%;
+    /* height: 50% */
+    width: 620px; 
+    height: 400px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    } 
+
+.container2{
+        position: relative;
+        width: 100%;
+        height: 110%;
+       
+    }
+
+.function
+{
+    position:absolute ;
+    text-align: center;
+    top:44cqmax;
+    left:14.5cm; 
+}
+
+/* .container3{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    } */
+.receptionpic1
+{
+position: absolute;
+left:20%;
+right: 20%;
+/* width: 55%; */
+top: 206cqmax;
+/* height: 50%; */
+}
+
+/* .text-overlay3{
+    position:absolute;
+    top: 5cqmax; /* Adjust the positioning to place text at the top */
+    /* left: 38%;
+    transform:translate(-50%);
+    background-color: none; /* Adjust the background color and opacity */
+    /* padding: 10px;
+    /* color: yellow;  */
+  /* color: #000;
+  font-size:small;
+    /* border-radius: 5px; */
+    /* max-width: 80%; */ 
+/* } */ 
+/* .container5{
+    position: relative;
+      
+        width: 100%;
+        height: 100%;  
+} */
+
+
+.text-overlayenv1
+{
+    position:absolute;
+    top: 5cqmax; /* Adjust the positioning to place text at the top */
+    left: 38%;
+    transform:translate(-50%);
+    background-color: none; /* Adjust the background color and opacity*/
+    padding: 10px;
+   color: #000;
+  font-size:xx-large;
+    
+}
+
+.envelop{
+    /* margin-top: 2cm; */
+    top: 116cqmax;
+    position:relative;
+    width: 23cm;
+    left:16%;
+    right: 17%;
+    font-size: xx-small;
+}
+
+.haldipic{
+top: 314cqmax ;
+ position: absolute;
+left:20%;
+right: 20%;
+/* width: 60%;   */
+
+}
+
+.envelop2
+{
+    top: 181cqmax;
+    position:relative;
+    width: 23cm;
+    left:16%;
+    right: 17%;  
+}
+
+.muhurthampic
+{
+top: 423cqmax ;
+position: absolute;
+left:20%;
+right: 20%;   
+}
+
+.envelop3
+{
+    top: 250cqmax;
+    position:relative;
+    width: 23cm;
+    left:16%;
+    right: 17%;  
+}
+
+
+
+@media(max-width:480px){
+    /* p{
+     font-size:small;
+     text-align: center;
+    } */
+
+    video{
+    width: 100%;
+height: auto;
+
+    }
+    p#demo{
+        font-size: 27px;
+    }
+
+    .text-overlay{
+        /* position: relative; */
+        top: 130px;
+        left: 40%;
+        font-size: 9px;
+    }
+
+    .mySlides{
+width: 100%;
+height: 209.78px;
+    }
+    .picture1{
+        top: 8cqmax;
+        width: 46.5%;
+        height: 105px;
+    }
+    .nayratext{
+        font-size: 9px;
+        left: 0.5cm;
+        top: 13cqmax;
+    }
+    .picture2{
+        top: 25cqmax;
+        width: 46.5%;
+        height: 105px; 
+    }
+    .abhitext{
+        top: 30cqmax;
+        right: 0.5cm;
+        font-size: 9px;
+    }
+    .text-overlay2{
+        font-size: 8px;
+        top: 38cqmax;
+        text-align: center;
+    }
+    .btn{
+        top: 53cqmax;
+        /* width: 10px; */
+        left: 45%;
+        right:45%;
+    /* height: 2px; */
+    border-radius:1px;
+    }
+    .button{
+    /* padding : 2px 7px;  */
+border: none;
+border-radius: 11px;
+padding: 2px 3px;
+    }
+    .text2{
+    top: 60cqmax;
+    font-size: small;
+
+    left: 35%;
+    right:35%
+    }
+
+    .function{
+    top:31cqmax;
+    font-size: small;
+    left: 3cm;
+    }
+
+.receptionpic1
+{
+left:25%;
+right: 25%;
+/* width: 55%; */
+top: 115cqmax;
+/* height: 50%; */
+}
+.envelop
+{
+    /* margin-top: 2cm; */
+    top: 74cqmax;
+    /* width: 23cm; */
+    left:20%;
+   width: 70%;
+}
+
+.text-overlay3{
+    top: 76cqmax;
+     font-size: small  
+} 
+
+.haldipic{
+    left: 25%;
+    right: 25%;
+    top: 170cqmax;
+
+}
+.envelop2{
+    top: 108cqmax;
+    left: 20%;
+    width: 70%;
+}
+
+.muhurthampic{
+    left: 25%;
+    right:25%;
+    top: 225cqmax;
+}
+.envelop3{
+    top: 143cqmax;
+    left: 20%;
+    width: 70%;
+}
+
+.text-overlayenv1{
+    top: 8px;
+    font-size: 7px;
+}
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <video controls>
+        <source src="/wedding/hrutavdo.mp4"type="video/mp4">
+        <!-- <div class="text-overlay">
+            <span style="color: #070707d0;"> Vijay </span>
+        <span style="color: chartreuse;"> Weds </span>
+          <span style="color: #000;"> Rashmika  </span>
+          </div> -->
+        </video>
+        <p id="demo"></p>
+           </div> 
+
+<!-- <div class="timer-container> -->
+<!-- <h2 class="w3-center">Automatic Slideshow</h2> -->
+
+<div class="w3-content w3-section" style="max-width:1500px">
+  <img class="mySlides" src="/wedding/rash7.jpg">
+  <img class="mySlides" src="/wedding/rash8.jpg">
+  <img class="mySlides" src="/wedding/rash5.jpg">
+  <div class="text-overlay2">
+  <h1><b><i style="color: rgb(255, 254, 255);">#Rashmika & #Vijay</i></b></h1>
+  <pre><b style="font-size: x-large; color: rgb(88, 248, 39);"> We're getting married</b></pre>
+  <span style="font-size: larger;"><i style="color: rgb(255, 255, 255);">&ensp;&ensp;&ensp;save the date</i></span>
+  <span style="font-size: larger;"><i style="color:rgb(88, 248, 39);">&ensp;&ensp;&ensp; 7 August 2023 </i></span>
+  </div>
+  <div class="btn">
+  <button style="background-color: yellow;">save</button>
+  </div>
+</div>
+<div class="text-overlay">
+    <span style="color: #ffffff;"> Vijay </span><span style="color: chartreuse;"> Weds </span>
+    <span style="color: #ffffff;"> Rashmika  </span>    
+    </div>
+
+    <div class="text2">
+        <span style="color: #000;"><i>Rashmika </i></span>
+        <span style="color: #fbff00;"><i>Weds </i></span>
+        <span style="color: #000;"><i>Vijay </i></span>
+        <br/>
+        <br/>
+        </div>
+        <div class="container1"> 
+            <div class="picture1">
+                 <img src="/wedding/rash1.jpg" >
+                 <br/>
+             </div>
+             <div class="nayratext"><h1 style="color: rgb(251, 255, 15);">DR.Rashmika</h1> </div>
+         
+             <div class="picture2">
+                <br/>
+             <img src="/wedding/rash2.jpg" >
+            </div>
+        <div class="abhitext"><h1 style="color: rgb(251, 255, 15);">Vijay</h1> </div>
+        </div>
+     
+        <div class="container2">
+            <div class="function"><h1 style="color: gold;">FUNCTIIONS</h1>
+            </div>
+        </div>
+
+        <!-- <div class="container3"> -->
+            <div class="receptionpic1" style="width: 60%;">
+            <img src="/wedding/reception.jpg" ></div>
+        <!-- </div> -->
+
+        <!-- <div class="container5"> -->
+            <div class="envelop"><img src="/wedding/kat4 (2).jpg">
+            <!-- <div class="text-overlay3"> -->
+                <!--<h1>Reception</h1> -->
+            <!-- <div><p> Aug 6,2023</p>
+            <p>06:30 PM</p>
+            <p>TTD Kalyana Mandapam</p>
+            <p>Kuppam,Andhra Pradesh.</p>
+            <button> View Map</button></div> -->
+        <!-- </div> -->
+            
+
+<div class="text-overlayenv1">
+    <div><h1 style="color: yellow;">Reception</h1>
+        <pre>Aug 6,2023</pre>
+        <pre>06:30 PM</pre>
+        <pre>TTD Kalyana Mandapam</pre>
+            <pre>Kuppam,Andhra Pradesh.</pre>
+            <button> View Map</button>
+
+    </div>
+</div>
+
+
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="container3"> -->
+                <div class="haldipic" style="width: 60%;">
+                <img src="/wedding/haldi.jpeg "></div>
+            <!-- </div> -->
+            
+            <!-- <div class="container5"> -->
+                <div class="envelop2"><img src="/wedding/kat4 (2).jpg">
+                <!-- <div class="text-overlay3">
+                    <h1 style="color: yellow;font-size: xxx-large;">Haldi</h1>
+                <div><p style="color: #000;font-size: x-large;"> Aug 7,2023</p>
+                <p style="color: #000;font-size: x-large;">01:30 AM</p>
+                <p style="color: #000;font-size: x-large;">TTD Kalyana Mandapam</p>
+                <p style="color: #000;font-size: x-large;">Kuppam,Andhra Pradesh.</p>
+                <button> View Map</button></div> -->
+
+
+                <div class="text-overlayenv1">
+                    <div><h1 style="color: yellow;">Haldi</h1>
+                        <pre>Aug 6,2023</pre>
+                        <pre>06:30 PM</pre>
+                        <pre>TTD Kalyana Mandapam</pre>
+                            <pre>Kuppam,Andhra Pradesh.</pre>
+                            <button> View Map</button>
+                
+                    </div>
+                </div>
+
+            </div>
+                
+                </div>
+                <!-- </div> -->
+            
+
+              <!-- <div class="container3"> -->
+                <div class="muhurthampic" style="width: 60%;">
+                    <img src="/wedding/shadi.jpg "></div>
+                <!-- </div> -->
+                
+                <!-- <div class="container5"> -->
+                    <div class="envelop3"><img src="/wedding/kat4 (2).jpg">
+                    <!-- <div class="text-overlay3">
+                        <h1 style="color: yellow;font-size: xxx-large;">Muhurtham</h1>
+                    <div><p style="color: #000;font-size: x-large;"> Aug 7,2023</p>
+                    <p style="color: #000;font-size: x-large;">01:30 AM</p>
+                    <p style="color: #000;font-size: x-large;">TTD Kalyana Mandapam</p>
+                    <p style="color: #000;font-size: x-large;">Kuppam,Andhra Pradesh.</p>
+                    <button> View Map</button></div>
+                </div> -->
+                    
+
+                <div class="text-overlayenv1">
+                    <div><h1 style="color: yellow;">Muhurtham</h1>
+                        <pre>Aug 6,2023</pre>
+                        <pre>06:30 PM</pre>
+                        <pre>TTD Kalyana Mandapam</pre>
+                            <pre>Kuppam,Andhra Pradesh.</pre>
+                            <button> View Map</button>
+                
+                    </div>
+                </div>
+
+                    </div>
+                    <!-- </div> -->        
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("DEC 7, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
+
+</body>
+</html>
