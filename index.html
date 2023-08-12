@@ -1,630 +1,327 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>wedding</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-<style>
-.mySlides {
-    display:none;
-    width: 100%;
-    max-width: 1500px;
-    height: 700px;
-    opacity: 0.5;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container1 {
+     position: relative;
+     display: absolute;
+        }
+       
+/* .text-overlay3{
+    position: absolute; 
+   font-size: xx-large;
+   top: 30%;
+} */
+        .container {
+            position: relative;
+        }
 
-.container{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+        /* Slideshow styling */
+        .slideshow {
+           display: block ;
+        }
 
+        .slideshow img {
+            display: none;
+           width: 100%;
+        }
 
+        .text-overlay{
+            
 
-     video{
-        width: 100%;
-        height:100%;
-        object-fit: cover;
-    } 
-   
-    /* .timer-container{
-     width: 100%;
-     height: 30%;
-    }  */
-
-    p {
-  text-align: center;
-  font-size: 60px;
-  color: yellow;
-  /* margin-top: 0px; */
-}
-
-
-/* img{
-    width: 1500px;
-    height: 700px;
-    object-fit: cover;
-    }  */
-    .text-overlay{
-   position: absolute; 
-   /* text-align: center;  */
-   left: 12.5cm;
-   right:12.5cm;
-  /* right: 40%;
-  left: 50%; */
-  /* font-size: 30px;   */
-  top: 500px;
-  /* bottom: 40px; */
-  
-}
-
-.text-overlay2
-{
     position: absolute;
-    top: 85cqmax; /* Adjust the positioning to place text at the top */
+    top: 155px; /* Adjust the positioning to place text at the top */
     left: 53%;
     transform: translateX(-50%);
     background-color: none; /* Adjust the background color and opacity */
     padding: 10px;
-    /*border-radius: 5px;*/
     max-width: 80%;
+    font-size: 30px;
+        
+        }
+
+        .button{
+            border-radius: 5px; 
+            padding: 7px 10px;
+            color: rgb(0, 0, 0);
+            background-color: yellow;
+        top: 90%;
+        }
+        .btn{
+           
+             text-align: center;
+border-radius: 5px;
+        }
+
+        button:hover{
+            color:rgb(41, 153, 144);
+            background-color: yellowgreen;
+        }
+        
+
+        .t1{
+            font-size: xx-large;
+            color: rgb(88, 248, 39)
+        }
+
+        .containerA{
+            display: flex;
+            align-items: center;
+        }
+        .containerB{
+            display: flex;
+            align-items: center;
+        }
+
+        .pic1{
+            flex: 1;
+            padding: 10px;
+        }
+        .pic2{
+            flex: 1;
+            padding: 10px;  
+        }
+.text1{
+    flex: 2;
+    padding: 10px;
+    font-size: 55px;
 }
 
-.btn{
-    position:absolute;
-    top: 113cqmax;
-    left: 50%;
-    right: 50%;
-    /* cursor: pointer;
-     transform:translate(-50%, -50%); */
-   /* background-color: rgb(245, 223, 24)
-   /* color rgb(238, 241, 27); */
-    /* font-size: 16px; */
-    /* padding : 10px 20px; */
-    /* border: none;
-    cursor:pointer;
-    text-align : center; */
-    width: 400px;
-    height: 100px;
-    border-radius:5px;
+.text2{
+    flex: 2;
+    padding: 10px;
+    font-size: 55px;
 }
 
-button{
-background-color: rgb(245, 223, 24); 
-padding : 12px 24px; 
-border: none;
-border-radius: 17px;
+.function{
+    font-size: 33px;
+    text-decoration: underline;
 }
-
-.text-overlay{
-   position: absolute; 
-   font-size: xx-large;
-   /* text-align: center;  */
-   /* left: 12cm;
-   right:12cm; */
-/* right: 40%;
-  left: 50%; */
-  /* font-size: 30px; */  
-  bottom: 40px; 
-}
-
-.text2
-{
-    position:absolute;
-    top: 126cqmax;
-    left: 38%;
-    right: 38%;
-    font-size:xx-large; 
-} 
-
-.container1{
-        position: relative;
-        width: 100%;
-        height: 100%;
-       
-    }
-
-    .picture1{
-/* top:135cqmax; */
-top: 3.8cm;
-position:absolute;
-width: 50%;
-/* height: 50%;  */
- right: 0%;
- width: 620px;
-  height: 400px;
-}
-/* img{
-    width: 620px;
-    height: 400px;
-    object-fit: cover;
-    }  */
-
-.nayratext
-{
-    position:absolute;
-    top: 20cqmax;
-    left: 20%;
-    right: 80%;
-    font-size: 16px;
-}
-
-.abhitext{
-    position:absolute;
-    top: 59cqmax;
-    right: 35%;
-    left: 65%;
-    font-size: 16px;
-}
-.picture2{
-    position:relative;
-    top: 16cm;
-    left: 0%;
-    margin-left: 0.5cm;
-    width: 48%;
-    /* height: 50% */
-    width: 620px; 
-    height: 400px;
-}
-img{
-    width: 100%;
-    object-fit: cover;
-    } 
-
-.container2{
-        position: relative;
-        width: 100%;
-        height: 110%;
-       
-    }
-
-.function
-{
-    position:absolute ;
-    text-align: center;
-    top:44cqmax;
-    left:14.5cm; 
-}
-
-/* .container3{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    } */
-.receptionpic1
-{
-position: absolute;
-left:20%;
-right: 20%;
-/* width: 55%; */
-top: 206cqmax;
-/* height: 50%; */
-}
-
-/* .text-overlay3{
-    position:absolute;
-    top: 5cqmax; /* Adjust the positioning to place text at the top */
-    /* left: 38%;
-    transform:translate(-50%);
-    background-color: none; /* Adjust the background color and opacity */
-    /* padding: 10px;
-    /* color: yellow;  */
-  /* color: #000;
-  font-size:small;
-    /* border-radius: 5px; */
-    /* max-width: 80%; */ 
-/* } */ 
-/* .container5{
+.envelop{
     position: relative;
-      
-        width: 100%;
-        height: 100%;  
+
+}
+.mytextN{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 33px;
+color: black;
+}
+#demo{
+    padding: 10px;
+    font-size: 33px;
+    color: lawngreen;
+}
+
+/* p {
+  text-align: center;
+  font-size: 60px;
+  color: yellow;
+ 
 } */
 
-
-.text-overlayenv1
-{
-    position:absolute;
-    top: 5cqmax; /* Adjust the positioning to place text at the top */
-    left: 38%;
-    transform:translate(-50%);
-    background-color: none; /* Adjust the background color and opacity*/
-    padding: 10px;
-   color: #000;
-  font-size:xx-large;
-    
+.func1{
+    position: absolute;
+top: 35%;
+left: 50%;
+forced-color-adjust: yellow;
+transform: translate(-50%,-50%);
+font-size: 45px;
+color: rgb(255, 238, 0); 
 }
-
-.envelop{
-    /* margin-top: 2cm; */
-    top: 116cqmax;
-    position:relative;
-    width: 23cm;
-    left:16%;
-    right: 17%;
-    font-size: xx-small;
-}
-
-.haldipic{
-top: 314cqmax ;
- position: absolute;
-left:20%;
-right: 20%;
-/* width: 60%;   */
-
-}
-
-.envelop2
-{
-    top: 181cqmax;
-    position:relative;
-    width: 23cm;
-    left:16%;
-    right: 17%;  
-}
-
-.muhurthampic
-{
-top: 423cqmax ;
-position: absolute;
-left:20%;
-right: 20%;   
-}
-
-.envelop3
-{
-    top: 250cqmax;
-    position:relative;
-    width: 23cm;
-    left:16%;
-    right: 17%;  
-}
-
-
 
 @media(max-width:480px){
-    /* p{
-     font-size:small;
-     text-align: center;
-    } */
-
     video{
     width: 100%;
 height: auto;
 
     }
-    p#demo{
-        font-size: 27px;
-    }
 
+   
     .text-overlay{
-        /* position: relative; */
-        top: 130px;
-        left: 40%;
-        font-size: 9px;
-    }
-
-    .mySlides{
-width: 100%;
-height: 209.78px;
-    }
-    .picture1{
-        top: 8cqmax;
-        width: 46.5%;
-        height: 105px;
-    }
-    .nayratext{
-        font-size: 9px;
-        left: 0.5cm;
-        top: 13cqmax;
-    }
-    .picture2{
-        top: 25cqmax;
-        width: 46.5%;
-        height: 105px; 
-    }
-    .abhitext{
-        top: 30cqmax;
-        right: 0.5cm;
-        font-size: 9px;
-    }
-    .text-overlay2{
+        top: 20%;
         font-size: 8px;
-        top: 38cqmax;
-        text-align: center;
-    }
-    .btn{
-        top: 53cqmax;
-        /* width: 10px; */
-        left: 45%;
-        right:45%;
-    /* height: 2px; */
-    border-radius:1px;
     }
     .button{
-    /* padding : 2px 7px;  */
 border: none;
 border-radius: 11px;
 padding: 2px 3px;
     }
+    .btn{
+        border-radius:23px;
+        top: 85%;
+
+        }
+    .t1{
+       font-size:12px;
+    }
+    .text1{
+        font-size: 15px;
+    }
     .text2{
-    top: 60cqmax;
-    font-size: small;
-
-    left: 35%;
-    right:35%
+        font-size: 15px;
     }
-
     .function{
-    top:31cqmax;
-    font-size: small;
-    left: 3cm;
+       
+        font-size: 17px;
     }
-
-.receptionpic1
-{
-left:25%;
-right: 25%;
-/* width: 55%; */
-top: 115cqmax;
-/* height: 50%; */
-}
-.envelop
-{
-    /* margin-top: 2cm; */
-    top: 74cqmax;
-    /* width: 23cm; */
-    left:20%;
-   width: 70%;
-}
-
-.text-overlay3{
-    top: 76cqmax;
-     font-size: small  
-} 
-
-.haldipic{
-    left: 25%;
-    right: 25%;
-    top: 170cqmax;
-
-}
-.envelop2{
-    top: 108cqmax;
-    left: 20%;
-    width: 70%;
-}
-
-.muhurthampic{
-    left: 25%;
-    right:25%;
-    top: 225cqmax;
-}
-.envelop3{
-    top: 143cqmax;
-    left: 20%;
-    width: 70%;
-}
-
-.text-overlayenv1{
-    top: 8px;
-    font-size: 7px;
-}
+    .mytextN{
+        top: 37%;
+        font-size: 12px;
     }
-
-</style>
+    .func1{
+        top: 20%;
+        font-size: 15px;
+    }
+    #p{
+        padding: 0px;
+        font-size: 15px;
+    }
+}
+    </style>
 </head>
-
 <body>
-
-    <div class="container">
-        <video controls>
-        <source src="hrutavdo.mp4"type="video/mp4">
-        <!-- <div class="text-overlay">
-            <span style="color: #070707d0;"> Vijay </span>
-        <span style="color: chartreuse;"> Weds </span>
-          <span style="color: #000;"> Rashmika  </span>
-          </div> -->
+    <center>
+    
+        <div class="container1">
+            <video controls >
+            <source src="hrutavdo.mp4" type="video/mp4" style="object-fit:contain;" width="100%">
+            <!-- <i class="text-overlay3">
+                <span style="color: #ffffff;"> Vijay </span><span style="color: chartreuse;"> Weds </span>
+                <span style="color: #ffffff;"> Rashmika  </span>    
+            </i>   
+         -->
         </video>
-        <p id="demo"></p>
-           </div> 
-
-<!-- <div class="timer-container> -->
-<!-- <h2 class="w3-center">Automatic Slideshow</h2> -->
-
-<div class="w3-content w3-section" style="max-width:1500px">
-  <img class="mySlides" src="rash7.jpg">
-  <img class="mySlides" src="rash8.jpg">
-  <img class="mySlides" src="rash5.jpg">
-  <div class="text-overlay2">
-  <h1><b><i style="color: rgb(255, 254, 255);">#Rashmika & #Vijay</i></b></h1>
-  <pre><b style="font-size: x-large; color: rgb(88, 248, 39);"> We're getting married</b></pre>
-  <span style="font-size: larger;"><i style="color: rgb(255, 255, 255);">&ensp;&ensp;&ensp;save the date</i></span>
-  <span style="font-size: larger;"><i style="color:rgb(88, 248, 39);">&ensp;&ensp;&ensp; 7 August 2023 </i></span>
-  </div>
-  <div class="btn">
-  <button style="background-color: yellow;">save</button>
-  </div>
-</div>
-<div class="text-overlay">
-    <span style="color: #ffffff;"> Vijay </span><span style="color: chartreuse;"> Weds </span>
-    <span style="color: #ffffff;"> Rashmika  </span>    
-    </div>
-
-    <div class="text2">
-        <span style="color: #000;"><i>Rashmika </i></span>
-        <span style="color: #fbff00;"><i>Weds </i></span>
-        <span style="color: #000;"><i>Vijay </i></span>
-        <br/>
-        <br/>
-        </div>
-        <div class="container1"> 
-            <div class="picture1">
-                 <img src="rash1.jpg" >
-                 <br/>
-             </div>
-             <div class="nayratext"><h1 style="color: rgb(251, 255, 15);">DR.Rashmika</h1> </div>
-         
-             <div class="picture2">
-                <br/>
-             <img src="rash2.jpg" >
-            </div>
-        <div class="abhitext"><h1 style="color: rgb(251, 255, 15);">Vijay</h1> </div>
-        </div>
-     
-        <div class="container2">
-            <div class="function"><h1 style="color: gold;">FUNCTIIONS</h1>
-            </div>
-        </div>
-
-        <!-- <div class="container3"> -->
-            <div class="receptionpic1" style="width: 60%;">
-            <img src="reception.jpg" ></div>
-        <!-- </div> -->
-
-        <!-- <div class="container5"> -->
-            <div class="envelop"><img src="kat4 (2).jpg">
-            <!-- <div class="text-overlay3"> -->
-                <!--<h1>Reception</h1> -->
-            <!-- <div><p> Aug 6,2023</p>
-            <p>06:30 PM</p>
-            <p>TTD Kalyana Mandapam</p>
-            <p>Kuppam,Andhra Pradesh.</p>
-            <button> View Map</button></div> -->
-        <!-- </div> -->
-            
-
-<div class="text-overlayenv1">
-    <div><h1 style="color: yellow;">Reception</h1>
-        <pre>Aug 6,2023</pre>
-        <pre>06:30 PM</pre>
-        <pre>TTD Kalyana Mandapam</pre>
-            <pre>Kuppam,Andhra Pradesh.</pre>
-            <button> View Map</button>
-
-    </div>
-</div>
+        <p id="demo">
+            <!-- <div class="timer" id="timer">-->
+           <span id="days"></span>d <span id="hours"></span>h <span id="minutes"></span>m <span id="seconds"></span>s 
+           <!-- <p>&emsp;</p> -->
+       <!--  </div> -->
+      </p>
+               </div> 
 
 
-            </div>
-            <!-- </div> -->
-
-            <!-- <div class="container3"> -->
-                <div class="haldipic" style="width: 60%;">
-                <img src="haldi.jpeg "></div>
-            <!-- </div> -->
-            
-            <!-- <div class="container5"> -->
-                <div class="envelop2"><img src="kat4 (2).jpg">
-                <!-- <div class="text-overlay3">
-                    <h1 style="color: yellow;font-size: xxx-large;">Haldi</h1>
-                <div><p style="color: #000;font-size: x-large;"> Aug 7,2023</p>
-                <p style="color: #000;font-size: x-large;">01:30 AM</p>
-                <p style="color: #000;font-size: x-large;">TTD Kalyana Mandapam</p>
-                <p style="color: #000;font-size: x-large;">Kuppam,Andhra Pradesh.</p>
-                <button> View Map</button></div> -->
-
-
-                <div class="text-overlayenv1">
-                    <div><h1 style="color: yellow;">Haldi</h1>
-                        <pre>Aug 6,2023</pre>
-                        <pre>06:30 PM</pre>
-                        <pre>TTD Kalyana Mandapam</pre>
-                            <pre>Kuppam,Andhra Pradesh.</pre>
-                            <button> View Map</button>
-                
-                    </div>
-                </div>
-
-            </div>
-                
-                </div>
-                <!-- </div> -->
-            
-
-              <!-- <div class="container3"> -->
-                <div class="muhurthampic" style="width: 60%;">
-                    <img src="shadi.jpg "></div>
-                <!-- </div> -->
-                
-                <!-- <div class="container5"> -->
-                    <div class="envelop3"><img src="kat4 (2).jpg">
-                    <!-- <div class="text-overlay3">
-                        <h1 style="color: yellow;font-size: xxx-large;">Muhurtham</h1>
-                    <div><p style="color: #000;font-size: x-large;"> Aug 7,2023</p>
-                    <p style="color: #000;font-size: x-large;">01:30 AM</p>
-                    <p style="color: #000;font-size: x-large;">TTD Kalyana Mandapam</p>
-                    <p style="color: #000;font-size: x-large;">Kuppam,Andhra Pradesh.</p>
-                    <button> View Map</button></div>
-                </div> -->
+               <div class="container">
+                <div class="slideshow">
                     
-
-                <div class="text-overlayenv1">
-                    <div><h1 style="color: yellow;">Muhurtham</h1>
-                        <pre>Aug 6,2023</pre>
-                        <pre>06:30 PM</pre>
-                        <pre>TTD Kalyana Mandapam</pre>
-                            <pre>Kuppam,Andhra Pradesh.</pre>
-                            <button> View Map</button>
-                
-                    </div>
+                    <img src="rash7.jpg">
+                    <img src="rash8.jpg">
+                    <img src="rash5.jpg">
+                    <i class="text-overlay">
+                    <h1 style="color: purple;">#vijay & #Rashmika</h1>
+                        <pre><b style=" color: rgb(88, 248, 39);"> We're getting married</b></pre>
+          <span style="color: purple">&ensp;&ensp;&ensp;save the date</span>
+          <span style="color:rgb(88, 248, 39);">&ensp;&ensp;&ensp; 7 December 2023 </span>
+                </i>
+                <button class="text-overlay button btn">save</button>
+                    
+                    <!-- Add more images... -->
                 </div>
+                
+            </div>
+           <h1 class="t1"> Vijay Weds Rashmika</h1>
 
-                    </div>
-                    <!-- </div> -->        
-
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-
-
-
-// Set the date we're counting down to
-var countDownDate = new Date("DEC 7, 2023 15:37:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+            <div class="containerA">
+                <div class="pic1">
+                  <img src="rash1.jpg"width="100%" alt="Image">
+                </div>
+                <div class="text1">
+                  <i><span style="color:purple">Vijay</span></i>
+                </div>
+              </div>
+            
+              <div class="containerB">
+                
+                <div class="text2">
+                  <i><span style="color:purple">Rashmika</span></i>
+                </div>
+                <div class="pic2">
+                  <img src="rash2.jpg"width="100%" alt="Image">
+                </div>
+              </div>
 
 
-</script>
+              <div>
+                <h4 class="function">FUNCTIONS</h4>
+              
+              <img src="reception.jpg" width= "51%" Style="border: 6px solid #da56b2; display: block;margin-left: auto;margin-right: auto;">
+              
+              <div class="envelop">
+              <img src="kat4 (2).jpg" width= "60%" Style="display: block;margin-left: auto;margin-right: auto;">
+               <i class="func1">Reception</i>
+              <p class="mytextN"> December 8,2023 <br> 06:30pm <br> TTD Kalyana Mandapam <br> Kuppam, Andra Pradesh.</p>
+              <a  class="mytextN"href="53F4+V9 Nagpur, Maharashtra" style="top: 75%;" target="_blank"><button style="background-color: #eb8b16a5;">View Map</button>
+              </a>
+            </div>
+              <img src="haldi.jpeg" width= "51%" Style="border: 6px solid #da56b2;display: block;margin-left: auto;margin-right: auto;">
+              <div class="envelop">
+              <img src="kat4 (2).jpg" width= "60%" Style="display: block;margin-left: auto;margin-right: auto;">
+              <i class="func1">Haldi</i>
+              <p class="mytextN">Dec 7,2023<br>TTD Kalyana Mandapam <br> Kuppam, Andra Pradesh.</p>
+              <a  class="mytextN"href="53F4+V9 Nagpur, Maharashtra" style="top: 75%;" target="_blank"><button style="background-color: #eb8b16a5;">View Map</button>
+              </a>
+            </div>
+              <img src="shadi.jpg" width= "51%" Style="border: 6px solid #da56b2;display: block;margin-left: auto;margin-right: auto;">
+              <div class="envelop">
+              <img src="kat4 (2).jpg" width= "60%" Style="display: block;margin-left: auto;margin-right: auto;">
+              <i class="func1">Muhurtham</i>
+              <p class="mytextN">Dec 7,2023 <br> 07:30pm <br> TTD Kalyana Mandapam <br> Kuppam, Andra Pradesh.</p>
+              <a  class="mytextN"href="53F4+V9 Nagpur, Maharashtra" style="top: 75%;" target="_blank"><button style="background-color: #eb8b16a5;">View Map</button>
+              </a>
+            </div>
+             
+            </div>
+
+
+               <script>
+                 // Slideshow script
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        // Countdown timer script
+        var countDownDate = new Date("Dec 07, 2023 09:30:00").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+               </script>
+
+            </center>  
 
 </body>
 </html>
